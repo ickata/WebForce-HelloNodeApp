@@ -1,0 +1,18 @@
+{
+   "framework_version": "2.0",
+   "id": "100",
+   "name": "Hello Node",
+   "description": "This is a sample Hello Node application that presents the basics of a WebForce application.",
+   "icon": "",
+   "tags": [
+      "Development"
+   ],
+   "authors": [
+      "John Smith"
+   ],
+   "site": "http://ickata.com",
+   "version": "1.1",
+   "availability": "reseller-only",
+   
+   "bindings": {}
+}
