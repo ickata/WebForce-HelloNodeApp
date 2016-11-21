@@ -24,7 +24,8 @@
                "add_ons"
             ],
             "display": {
-               "template": "http://ickata.com/WF/Apps/HelloNode/display.htm"
+               "template": "http://ickata.com/WF/Apps/HelloNode/display.htm",
+               "initialize": "MyCustomClass"
             },
             "edit": {
                "template": "http://ickata.com/WF/Apps/HelloNode/properties.htm",

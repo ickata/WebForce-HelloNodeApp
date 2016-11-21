@@ -1,2 +1,40 @@
 <h1>Hello, <span contenteditable="true" data-bind="editableText: properties.name"></span></h1>
 <p>This is our display view</p>
+
+<p class="my-paragraph">
+   <!-- the content of this paragraph will be dynamically created -->
+</p>
+
+<script type="text/javascript">
+/**
+ * @class MyCustomClass
+ * 
+ * This is the application's main class that will be instantiated for each 
+ * added element.
+ * 
+ * @see  http://mootools.net/core/docs/1.6.0/Class/Class
+ * @see  http://support.webforce.com/customer/en/portal/articles/1952312-applications
+ */
+MyCustomClass = new Class({
+   
+   // We must extend the property framework base class
+   Extends     : SK.UI.Element.Application.Display,
+   
+   /**
+    * @constructor
+    * 
+    * @param  {Object} env Environment object containing DOM placeholder, properties, session, etc.
+    * 
+    * @return {Object}     MyCustomClass instance
+    */
+   initialize  : function ( env ) {
+      this.parent( env );  // calling the super constructor
+      
+      // dynamically create some content
+      _$( env.placeholder )                  // this is our root DOM element (keeping all this content)
+            .getElement( '.my-paragraph' )   // our element in which we wish to insert content
+            .set( 'html', 'My dynamically created content' );
+   }
+   
+});
+</script>
