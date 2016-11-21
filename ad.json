@@ -3,7 +3,7 @@
    "id": "100",
    "name": "Hello Node",
    "description": "This is a sample Hello Node application that presents the basics of a WebForce application.",
-   "icon": "",
+   "icon": "http://ickata.com/WF/Apps/HelloNode/Images/icon.png",
    "tags": [
       "Development"
    ],
@@ -14,5 +14,25 @@
    "version": "1.1",
    "availability": "reseller-only",
    
-   "bindings": {}
+   "bindings": {
+      "elements": [
+         {
+            "id": "MyUniqueID",
+            "caption": "Hello, WebForce",
+            "icon": "http://ickata.com/WF/Apps/HelloNode/Images/icon.png",
+            "categories": [
+               "add_ons"
+            ],
+            "display": {
+               "template": "http://ickata.com/WF/Apps/HelloNode/display.htm"
+            },
+            "edit": {
+               "template": "http://ickata.com/WF/Apps/HelloNode/properties.htm",
+               "display_options": {
+                  "type": "panel"
+               }
+            }
+         }
+      ]
+   }
 }
