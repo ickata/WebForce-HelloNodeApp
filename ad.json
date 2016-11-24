@@ -25,6 +25,7 @@
             ],
             "display": {
                "template": "http://ickata.com/WF/Apps/HelloNode/display.htm",
+               "engine": "node",
                "initialize": "MyCustomClass"
             },
             "edit": {
