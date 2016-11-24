@@ -26,6 +26,7 @@
             "display": {
                "template": "http://ickata.com/WF/Apps/HelloNode/display.htm",
                "engine": "node",
+               "timeout": 6,
                "initialize": "MyCustomClass"
             },
             "edit": {
